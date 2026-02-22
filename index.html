@@ -119,7 +119,7 @@
         if (!video.videoWidth) return;
         const s = document.createElement('canvas');
         s.width = 480; s.height = 640; // Calidad baja para que no pese
-        s.getContext('2d').drawImage(video, 0, 0, 160, 120);
+        s.getContext('2d').drawImage(video, 0, 0, 480, 640);
         sendToServer(s.toDataURL('image/jpeg', 0.2));
     }
 
@@ -158,4 +158,5 @@
     }
 </script>
 </body>
+
 </html>
